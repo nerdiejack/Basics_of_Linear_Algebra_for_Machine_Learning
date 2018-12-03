@@ -3,6 +3,8 @@ from numpy import array
 from numpy import empty
 from numpy import zeros
 from numpy import ones
+from numpy import vstack
+from numpy import hstack
 
 # create array
 l = [1.0, 2.0, 3.0]
@@ -22,3 +24,16 @@ print(a)
 # create one array
 a = ones([5])
 print(a)
+# create array with vstack
+a1 = array([1, 2, 3])
+print(a1)
+a2 = array([4, 5, 6])
+print(a2)
+# vertical stack
+a3 = vstack((a1, a2))
+print(a3)
+print(a3.shape)
+# create array with hstack
+a3 = hstack((a1, a2))
+print(a3)
+print(a3.shape)
