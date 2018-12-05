@@ -60,4 +60,32 @@ from numpy import hstack
 # train, test = data[:split,:], data[split:,:]
 # print(train)
 # print(test)
-
+# shape of one-dimensional array
+# data = array([11, 22, 33, 44, 55])
+# print(data.shape)
+# # shape of a two-dimensional array
+# data = [[11, 22],
+#         [33, 44],
+#         [55, 66]]
+# data = array(data)
+# print(data.shape)
+# # row and column shape of two-dimensional array
+# print('Rows: %d' % data.shape[0])
+# print('Cols: %d' % data.shape[1])
+# reshape 1D array to 2D
+# data = array([11, 22, 33, 44, 55])
+# print(data.shape)
+# # reshape
+# data = data.reshape((data.shape[0], 1))
+# print(data.shape)
+# print(data)
+# reshape 2D array to 3D
+data = [[11, 22],
+        [33, 44],
+        [55, 66]]
+data = array(data)
+print(data.shape)
+# reshape
+data = data.reshape((data.shape[0], data.shape[1], 1))
+print(data.shape)
+print(data)
