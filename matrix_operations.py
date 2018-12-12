@@ -3,6 +3,7 @@ from numpy import array
 from numpy.linalg import inv
 from numpy.linalg import det
 from numpy import trace
+from numpy.linalg import matrix_rank
 # define matrix
 # A = array([
 # [1, 2],
@@ -34,5 +35,45 @@ from numpy import trace
 # B = trace(A)
 # print(B)
 
+# matrix determinant
+# A = array([
+# [1, 2, 3],
+# [4, 5, 6],
+# [7, 8, 9]])
+# print(A)
+# calculate determinant
+# B = det(A)
+# print(B)
 
+# rank
+# v1 = array([1,2,3])
+# print(v1)
+# vr1 = matrix_rank(v1)
+# print(vr1)
+# zero rank
+# v2 = array([0,0,0,0,0])
+# print(v2)
+# vr2 = matrix_rank(v2)
+# print(vr2)
 
+# rank 0
+M0 = array([
+[0,0],
+[0,0]])
+print(M0)
+mr0 = matrix_rank(M0)
+print(mr0)
+# rank 1
+M1 = array([
+[1,2],
+[1,2]])
+print(M1)
+mr1 = matrix_rank(M1)
+print(mr1)
+# rank 2
+M2 = array([
+[1,2],
+[3,4]])
+print(M2)
+mr2 = matrix_rank(M2)
+print(mr2)
